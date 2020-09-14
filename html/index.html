@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>錬成教室 やいま塾</title>
   </head>
   <body>
@@ -20,14 +21,56 @@
           </ul>
         </div> <!--d-flex ect-->
       </div> <!--ヘッダー-->
-    
+      
+      <!--スマホメニュースタート-->
+      <div id="menu">
+
+        <div v-on:click="drawer" class="d-flex flex-column justify-content-center align-items-center" style="width:15.7vw; height:15.7vw; border-radius:50%; background-color:#47B268; position:fixed; top:19.3vw; left:76.8vw; z-index:1;  box-shadow:0 1px 5px 1px #bbb">
+          <div style="height:0.5vw; width:9.4vw; background-color:white; border-radius:1vw; margin-top:2vw"></div>
+          <div style="height:0.5vw; width:9.4vw; background-color:white; border-radius:1vw; margin-top:2vw"></div>
+          <div style="height:0.5vw; width:9.4vw; background-color:white; border-radius:1vw; margin-top:2vw"></div>
+          <div style="font-size:2.9vw; color:white; margin-top:1vw">MENU</div>
+        </div>
+  
+        <div class="humberger">
+          <ul class="flex-column text-center list-unstyled" style="position:fixed; top:0; right:-80vw; background-color:#C4F7C4; width:80vw; height:100vh; z-index:2; transition:0.4s linear" v-bind:style="{transform:draw}">
+            <li style="margin-top:10vw; margin-left:50vw; padding-bottom:25vw; font-size:17vw;"><a href="#" style="color:#47B268; transition:0.4s linear" v-on:click="closer">×</a></li>
+            <li><a v-on:click="closer">ホーム</a></li>
+            <li><a href="about.html">やいま塾について</a></li>
+            <li><a href="success.html">合格体験記・合格実績</a></li>
+            <li><a href="course.html"> コース・料金</a></li>
+            <li><a href="session.html">進学への道</a></li>
+            <li><a href="interview.html">卒塾生インタビュー</a></li>
+            <li><a href="access.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <script>
+        const vue = new Vue({
+          el:"#menu",
+          data:{
+            draw:'translateX(0)'
+          },
+          methods:{
+            drawer: function() {
+              vue.$data.draw = 'translateX(-80vw)';
+            },
+            closer: function() {
+              vue.$data.draw = 'translateX(0)'
+            }
+          }
+        })
+      </script>
+      <!--スマホメニューここまで-->
+       
     <div class="jumbotron-fluid" style="height:62.3vw; background-image:url(../images/spsea.jpeg); background-size:cover; position:relative; top:-1.2vh">
       <div class="container-fluid"> <!--海の写真スタート-->
         <div class="pt-4 mb-2 pl-3" style="color:#000000; font-size:9vw; text-align:center">石垣島<span style="font-size:6vw">から、
         </span></br>進学<span style="font-size:6vw">で、</span>未来<span style="font-size:6vw">へ。</span>
         </div>
         <a href="access.html" class="btn btn-block font-weight-bold mx-auto mt-4" 
-                              style="width:56.5vw; height:16.4vw; background-color:#C4F7C4; color:#47B268; font-size:6vw; padding-top:3.7vw; border-radius:5vw">無料体験受付中</a>
+                              style="width:56.5vw; height:16.4vw; background-color:#C4F7C4; color:#47B268; font-size:6vw; padding-top:3.7vw; border-radius:5vw; box-shadow:0 1px 5px 1px #bbb">無料体験受付中</a>
       </div> <!--海の写真ここまで-->
     </div> <!--jumbotron-fluid-->
     
@@ -61,7 +104,7 @@
                             合格した先輩たちの体験談、アドバイスを覗いてみませんか？
                             合格した先輩たちの体験談、アドバイスを覗いてみませんか？</div>
       <a href="success.html" class="btn btn-block font-weight-bold mx-auto mt-4 mb-4" 
-                              style="width:56.5vw; height:16.4vw; background-color:#FCBBED; color:#505050; font-size:5.2vw; padding-top:4vw; border-radius:5vw">合格体験記を見る︎</a>
+                              style="width:56.5vw; height:16.4vw; background-color:#FCBBED; color:#505050; font-size:5.2vw; padding-top:4vw; border-radius:5vw; box-shadow:0 1px 5px 1px #bbb">合格体験記を見る︎</a>
     </div> <!--合格体験記ここまで-->
     
     <div class="container-fluid text-center"> <!--塾長より挨拶スタート-->
