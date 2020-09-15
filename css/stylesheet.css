@@ -157,6 +157,24 @@ body {
     box-shadow:0 1px 5px 1px #bbb;
 }
 
+.news iframe {
+    width:78.5vw;
+    height:112vw;
+}
+
+.newsbox {
+    background-color:#F9FFF2;
+    font-size:4.7vw;
+}
+
+.newstext {
+    margin:0 5vw;
+    padding-top:5vw;
+}
+
+.newsdate {
+    color:#2FBA4E;
+}
 /*-------------------course.htmlスタート-----------------*/
 
 .table tr:nth-child(odd){
