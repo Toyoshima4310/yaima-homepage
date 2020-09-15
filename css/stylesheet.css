@@ -2,7 +2,92 @@
 
 body {
     color: #505050;
+    font-size:3.7vw;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;;
+}
+
+.header ul li {
+    font-size:3vw;
+}
+
+.headerlogo {
+    font-size:6vw;
+}
+
+.themeg {
+    display:inline-block;
+    font-size:5vw;
+    border-bottom:3px solid #2FBA4E;
+}
+
+.themep {
+    display:inline-block;
+    font-size:5vw;
+    border-bottom:3px solid #FCBBED;
+}
+
+.headerg {
+    width:100%;
+    height:7vh;
+    background-color:#EEFFDB;
+    font-size:5vw;
+    position:relative;
+    top:-2.2vw;
+}
+
+.headerp {
+    width:100%;
+    height:7vh;
+    background-color:#FFE3F9;
+    font-size:5vw;
+    position: relative;
+    top:-2.2vw;
+}
+
+.footer {
+    width:100%;
+    height:8vh;
+    margin-top:40vh;
+    background-color:#EEFFDB;
+    font-size:3.6vw;
+}
+
+/*------------------------ハンバーガーメニュースタート--------------------*/
+.menubtn {
+    width:15.7vw;
+    height:15.7vw;
+    border-radius:50%;
+    background-color:#47B268;
+    position:fixed;
+    top:19.3vw;
+    left:76.8vw;
+    z-index:1;
+    box-shadow:0 1px 5px 1px #bbb;
+}
+
+.line {
+    height:0.5vw;
+    width:9.4vw;
+    background-color:white;
+    border-radius:1vw;
+    margin-top:2vw
+}
+
+.menutext {
+    font-size:2.9vw;
+    color:white;
+    margin-top:1vw;
+}
+
+.humberger ul {
+    position:fixed;
+    top:0;
+    right:-80vw;
+    background-color:#C4F7C4;
+    width:80vw;
+    height:100vh;
+    z-index:2;
+    transition:0.4s linear;
 }
 
 .humberger ul li {
@@ -11,12 +96,122 @@ body {
     margin:0;
 }
 
+.humberger ul li:first-child {
+    margin-top:10vw;
+    margin-left:50vw;
+    padding-bottom:25vw;
+    font-size:17vw;
+}
+
 .humberger ul li a {
     display:block;
     text-decoration:none;
 }
+
+.humberger ul li:first-child a {
+    color:#47B268;
+    transition:0.4s linear;
+}
+
 .humberger ul li:not(:first-child) a {
     color:#47B268;
     font-size:4.8vw;
     font-weight:bold;
+}
+
+/*--------------------------index.htmlスタート-------------------------*/
+
+.sea {
+    height:62.3vw;
+    background-image:url(../images/spsea.jpeg);
+    background-size:cover;
+    position:relative;
+    top:-2.2vw;
+}
+
+.seatext {
+    color:#000000;
+    font-size:9vw;
+    text-align:center;
+}
+
+.sea a {
+    width:56.5vw;
+    height:16.4vw;
+    background-color:#C4F7C4;
+    color:#47B268;
+    font-size:6vw;
+    padding-top:3.7vw;
+    border-radius:5vw;
+    box-shadow:0 1px 5px 1px #bbb;
+}
+
+.idxsuc a {
+    width:56.5vw;
+    height:16.4vw;
+    background-color:#FCBBED;
+    color:#505050;
+    font-size:5.2vw;
+    padding-top:4vw;
+    border-radius:5vw;
+    box-shadow:0 1px 5px 1px #bbb;
+}
+
+/*-------------------course.htmlスタート-----------------*/
+
+.table tr:nth-child(odd){
+    background-color:#F6FFEB;
+}
+
+/*------------------success.htmlスタート-----------------*/
+
+.sucimg {
+    display:block;
+    height:60vw;
+    width:39vw;
+    background-color:#FFE3F9;
+    border-radius:5vw;
+    box-shadow:0 1px 5px 1px #bbb;
+    padding-top:2.5vw;
+    padding-bottom:2.5vw;
+}
+
+.sucimg img {
+    height:35vw;
+    width:35vw;
+    margin-bottom:3vw;
+    border-radius:50%;
+}
+
+
+.themecp {
+    display:inline-block;
+    border-left:5px solid #FFE3F9;
+}
+
+/*-----------------interviw.htmlスタート----------------*/
+
+.intimg {
+    font-size:2.8vw;
+    display:block;
+    height:60vw;
+    width:39vw;
+    background-color:#EEFFDB;
+    border-radius:5vw;
+    box-shadow:0 1px 5px 1px #bbb;
+    padding-top:2.5vw;
+    padding-bottom:2.5vw;
+}
+
+.intimg img {
+    height:35vw;
+    width:35vw;
+    margin-bottom:3vw;
+    border-radius:50%;
+}
+
+/*--------------session.htmlスタート--------------------*/
+
+.ssnimg {
+    width:68vw;
 }

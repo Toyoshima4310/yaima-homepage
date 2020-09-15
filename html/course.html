@@ -12,29 +12,29 @@
     <title>コース・料金</title>
   </head>
   <body>
-      <div class="container-fluid"> <!--ヘッダー-->
-        <div class="d-flex justify-content-around mt-2">
-          <div style="font-size:6vw">錬成教室 やいま塾</div>
-          <ul class="list-unstyled">
-            <li style="font-size:3vw">営業時間 9時〜17時</li>
-            <li style="font-size:3vw">TEL 0000-00-0000</li>
-          </ul>
-        </div> <!--d-flex ect-->
-      </div> <!--ヘッダー-->
+    <div class="container-fluid"> <!--ヘッダー-->
+      <div class="header d-flex justify-content-around mt-2">
+        <div class="headerlogo">錬成教室 やいま塾</div>
+        <ul class="list-unstyled">
+          <li>営業時間 9時〜17時</li>
+          <li>TEL 0000-00-0000</li>
+        </ul>
+      </div> <!--d-flex ect-->
+    </div> <!--ヘッダー-->
 
       <!--スマホメニュースタート-->
       <div id="menu">
 
-        <div v-on:click="drawer" class="d-flex flex-column justify-content-center align-items-center" style="width:15.7vw; height:15.7vw; border-radius:50%; background-color:#47B268; position:fixed; top:19.3vw; left:76.8vw; z-index:1;  box-shadow:0 1px 5px 1px #bbb">
-          <div style="height:0.5vw; width:9.4vw; background-color:white; border-radius:1vw; margin-top:2vw"></div>
-          <div style="height:0.5vw; width:9.4vw; background-color:white; border-radius:1vw; margin-top:2vw"></div>
-          <div style="height:0.5vw; width:9.4vw; background-color:white; border-radius:1vw; margin-top:2vw"></div>
-          <div style="font-size:2.9vw; color:white; margin-top:1vw">MENU</div>
+        <div v-on:click="drawer" class="menubtn d-flex flex-column justify-content-center align-items-center">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="menutext">MENU</div>
         </div>
   
         <div class="humberger">
-          <ul class="flex-column text-center list-unstyled" style="position:fixed; top:0; right:-80vw; background-color:#C4F7C4; width:80vw; height:100vh; z-index:2; transition:0.4s linear" v-bind:style="{transform:draw}">
-            <li style="margin-top:10vw; margin-left:50vw; padding-bottom:25vw; font-size:17vw;"><a href="#" style="color:#47B268; transition:0.4s linear" v-on:click="closer">×</a></li>
+          <ul class="flex-column text-center list-unstyled" v-bind:style="{transform:draw}">
+            <li><a href="#" v-on:click="closer">×</a></li>
             <li><a href="index.html">ホーム</a></li>
             <li><a href="about.html">やいま塾について</a></li>
             <li><a href="success.html">合格体験記・合格実績</a></li>
@@ -64,48 +64,44 @@
       </script>
       <!--スマホメニューここまで-->
       
-      <div class="d-inline-flex justify-content-center"
-            style="width:100%; height:7vh; background-color:#EEFFDB"> <!--ヘッダー帯-->
-        <div class="align-self-center font-weight-bold" style="font-size:6vw">コース・料金</div>
+      <div class="headerg d-inline-flex justify-content-center"> <!--ヘッダー帯-->
+        <div class="align-self-center font-weight-bold">コース・料金</div>
       </div>
       
-      <div class="container-fluid d-flex flex-column"> <!--コース・料金スタート-->
-      <div class="mt-5 mb-3 font-weight-bold text-center" 
-            style="display:inline-block; font-size:5vw; border-bottom:3px solid #2FBA4E">小学生コース</div>
+      <div class="container-fluid text-center"> <!--コース・料金スタート-->
+      <div class="themeg mt-5 mb-3 font-weight-bold">小学生コース</div>
         <table class="table text-center table-bordered mt-3">
-          <tr><th style="background-color:#F6FFEB">対象学年</th></tr>
+          <tr><th>対象学年</th></tr>
           <tr><td>小学１年生〜小学６年生</td></tr>
-          <tr><th style="background-color:#F6FFEB">対象科目</th></tr>
+          <tr><th>対象科目</th></tr>
           <tr><td>国語　算数　理科　社会　英語</td></tr>
-          <tr><th style="background-color:#F6FFEB">時間・回数</th></tr>
+          <tr><th>時間・回数</th></tr>
           <tr><td>100分 × 週２回 または 週３回</td></tr>
-          <tr><th style="background-color:#F6FFEB">その他</th></tr>
+          <tr><th>その他</th></tr>
           <tr><td>検定試験・中学受験等ご相談ください。</td></tr>
         </table>
-      <div class="mt-5 mb-3 font-weight-bold text-center" 
-            style="display:inline-block; font-size:5vw; border-bottom:3px solid #2FBA4E">中学生コース</div>
+      <div class="themeg mt-5 mb-3 font-weight-bold">中学生コース</div>
         <table class="table text-center table-bordered mt-3">
-          <tr><th style="background-color:#F6FFEB">対象学年</th></tr>
+          <tr><th>対象学年</th></tr>
           <tr><td>中学１年生〜中学３年生</td></tr>
-          <tr><th style="background-color:#F6FFEB">対象科目</th></tr>
+          <tr><th>対象科目</th></tr>
           <tr><td>英語　国語　数学　理科　社会</td></tr>
-          <tr><th style="background-color:#F6FFEB">時間・回数</th></tr>
+          <tr><th>時間・回数</th></tr>
           <tr><td>155分 × 週２回 または 週３回</td></tr>
-          <tr><th style="background-color:#F6FFEB">その他</th></tr>
+          <tr><th>その他</th></tr>
           <tr><td>検定試験・私立・県外受験等ご相談ください。</td></tr>
         </table>
-      <div class="mt-5 mb-3 font-weight-bold text-center" 
-            style="display:inline-block; font-size:5vw; border-bottom:3px solid #2FBA4E">高校生コース</div>
+      <div class="themeg mt-5 mb-3 font-weight-bold">高校生コース</div>
        <table class="table text-center table-bordered mt-3">
-          <tr><th style="background-color:#F6FFEB">対象学年</th></tr>
+          <tr><th>対象学年</th></tr>
           <tr><td>高校１年生〜高校３年生</td></tr>
-          <tr><th style="background-color:#F6FFEB">対象科目</th></tr>
+          <tr><th>対象科目</th></tr>
           <tr><td class="text-left">英語　国語　数学　理科　社会</br>
                   小論文・面接(プレゼンテーション、</br>
                   グループディスカッション等)</td></tr>
-          <tr><th style="background-color:#F6FFEB">時間・回数</th></tr>
+          <tr><th>時間・回数</th></tr>
           <tr><td>150分 × 週２回 または 週３回</td></tr>
-          <tr><th style="background-color:#F6FFEB">その他</th></tr>
+          <tr><th>その他</th></tr>
           <tr><td class="text-left">入塾時に面談にて、</br>
                   学習目標を設定してからの受講となります。</br>
                   ・学校授業の予復習中心</br>
@@ -113,12 +109,11 @@
                   ・A O入試対策</br>
                   ・推薦入試対策　など</td></tr>
         </table>
-      <div class="mt-5 mb-3 font-weight-bold text-center" 
-            style="display:inline-block; font-size:5vw; border-bottom:3px solid #2FBA4E">既卒・一般コース</div>
+      <div class="themeg mt-5 mb-3 font-weight-bold">既卒・一般コース</div>
         <table class="table text-center table-bordered mt-3">
-          <tr><th style="background-color:#F6FFEB">対象者</th></tr>
+          <tr><th>対象者</th></tr>
           <tr><td>中学・高校・大学卒業者及び一般社会人</td></tr>
-          <tr><th style="background-color:#F6FFEB">対象科目</th></tr>
+          <tr><th>対象科目</th></tr>
           <tr><td class="text-left">・公務員対策講座</br>
                   ・中国語講座</br>
                   ・簿記講座</br>
@@ -126,17 +121,16 @@
                   ・保育士資格取得講座</br>
                   ・工業系資格取得講座・技術系資格取得講座</br>
                   ・大学・専門学校受験講座</td></tr>
-          <tr><th style="background-color:#F6FFEB">時間・回数</th></tr>
+          <tr><th>時間・回数</th></tr>
           <tr><td>90分 × 週２回(目安)</td></tr>
-          <tr><th style="background-color:#F6FFEB">その他</th></tr>
+          <tr><th>その他</th></tr>
           <tr><td class="text-left">事前面談にて、時間帯・回数・進度等の</br>
                   スケジュールを設定してからの受講となります。</td></tr>
         </table>
       </div> <!--コース・料金ここまで-->
       
-      <div class="d-inline-flex justify-content-center"
-            style="width:100%; height:8vh; margin-top:40vh; background-color:#EEFFDB"> <!--フッター-->
-        <div class="align-self-center" style="font-size:3.6vw">ここに著作権のことを書きます。</div>
+      <div class="footer d-inline-flex justify-content-center"> <!--フッター-->
+        <div class="align-self-center">ここに著作権のことを書きます。</div>
       </div>
 
     <!-- Optional JavaScript -->

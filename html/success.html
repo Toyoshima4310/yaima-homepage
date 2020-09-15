@@ -13,11 +13,11 @@
   </head>
   <body>
       <div class="container-fluid"> <!--ヘッダー-->
-        <div class="d-flex justify-content-around mt-2">
-          <div style="font-size:6vw">錬成教室 やいま塾</div>
+        <div class="header d-flex justify-content-around mt-2">
+          <div class="headerlogo">錬成教室 やいま塾</div>
           <ul class="list-unstyled">
-            <li style="font-size:3vw">営業時間 9時〜17時</li>
-            <li style="font-size:3vw">TEL 0000-00-0000</li>
+            <li>営業時間 9時〜17時</li>
+            <li>TEL 0000-00-0000</li>
           </ul>
         </div> <!--d-flex ect-->
       </div> <!--ヘッダー-->
@@ -25,16 +25,16 @@
       <!--スマホメニュースタート-->
       <div id="menu">
 
-        <div v-on:click="drawer" class="d-flex flex-column justify-content-center align-items-center" style="width:15.7vw; height:15.7vw; border-radius:50%; background-color:#47B268; position:fixed; top:19.3vw; left:76.8vw; z-index:1;  box-shadow:0 1px 5px 1px #bbb">
-          <div style="height:0.5vw; width:9.4vw; background-color:white; border-radius:1vw; margin-top:2vw"></div>
-          <div style="height:0.5vw; width:9.4vw; background-color:white; border-radius:1vw; margin-top:2vw"></div>
-          <div style="height:0.5vw; width:9.4vw; background-color:white; border-radius:1vw; margin-top:2vw"></div>
-          <div style="font-size:2.9vw; color:white; margin-top:1vw">MENU</div>
+        <div v-on:click="drawer" class="menubtn d-flex flex-column justify-content-center align-items-center">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="menutext">MENU</div>
         </div>
   
         <div class="humberger">
-          <ul class="flex-column text-center list-unstyled" style="position:fixed; top:0; right:-80vw; background-color:#C4F7C4; width:80vw; height:100vh; z-index:2; transition:0.4s linear" v-bind:style="{transform:draw}">
-            <li style="margin-top:10vw; margin-left:50vw; padding-bottom:25vw; font-size:17vw;"><a href="#" style="color:#47B268; transition:0.4s linear" v-on:click="closer">×</a></li>
+          <ul class="flex-column text-center list-unstyled" v-bind:style="{transform:draw}">
+            <li><a href="#" v-on:click="closer">×</a></li>
             <li><a href="index.html">ホーム</a></li>
             <li><a href="about.html">やいま塾について</a></li>
             <li><a v-on:click="closer">合格体験記・合格実績</a></li>
@@ -64,62 +64,52 @@
       </script>
       <!--スマホメニューここまで-->
       
-      <div class="d-inline-flex justify-content-center"
-            style="width:100%; height:7vh; background-color:#FFE3F9"> <!--ヘッダー帯-->
-        <div class="align-self-center font-weight-bold" style="font-size:6vw">合格体験記・合格実績</div>
+      <div class="headerp d-inline-flex justify-content-center"> <!--ヘッダー帯-->
+        <div class="align-self-center font-weight-bold">合格体験記・合格実績</div>
       </div>
       
       <div class="container-fluid text-center"> <!--私の合格体験記スタート-->
-        <div class="mt-5 font-weight-bold" 
-            style="display:inline-block; font-size:5vw; border-bottom:3px solid #FFE3F9;">私の合格体験記</div>
+        <div class="themep mt-5 font-weight-bold">私の合格体験記</div>
         <div class="mt-4">顔写真をタップすると、</br>
                           合格体験記を見ることができます。</div>
           <div class="row mt-4">
-            <div class="col-5 mx-auto text-center my-4" 
-            style="display:block; height:34vh; width:39vw; background-color:#FFE3F9; border-radius:5vw; box-shadow:0 1px 5px 1px #bbb">
-              <img src="../images/teacher1.jpeg" class="mt-3 mb-2" style="height:35vw; width:35vw; border-radius:50%">
+            <div class="sucimg col-5 mx-auto text-center my-4">
+              <img src="../images/teacher1.jpeg">
               名前</br>
               出身校</br>
               合格した学校</div>
-            <div class="col-5 mx-auto text-center my-4" 
-            style="display:block; height:34vh; width:39vw; background-color:#FFE3F9; border-radius:5vw; box-shadow:0 1px 5px 1px #bbb">
-              <img src="../images/teacher1.jpeg" class="mt-3 mb-2" style="height:35vw; width:35vw; border-radius:50%">
+            <div class="sucimg col-5 mx-auto text-center my-4">
+              <img src="../images/teacher1.jpeg">
               名前</br>
               出身校</br>
               合格した学校</div>
-            <div class="col-5 mx-auto text-center my-4" 
-            style="display:block; height:34vh; width:39vw; background-color:#FFE3F9; border-radius:5vw; box-shadow:0 1px 5px 1px #bbb">
-              <img src="../images/teacher1.jpeg" class="mt-3 mb-2" style="height:35vw; width:35vw; border-radius:50%">
+            <div class="sucimg col-5 mx-auto text-center my-4">
+              <img src="../images/teacher1.jpeg">
               名前</br>
               出身校</br>
               合格した学校</div>
-            <div class="col-5 mx-auto text-center my-4" 
-            style="display:block; height:34vh; width:39vw; background-color:#FFE3F9; border-radius:5vw; box-shadow:0 1px 5px 1px #bbb">
-              <img src="../images/teacher1.jpeg" class="mt-3 mb-2" style="height:35vw; width:35vw; border-radius:50%">
+            <div class="sucimg col-5 mx-auto text-center my-4">
+              <img src="../images/teacher1.jpeg">
               名前</br>
               出身校</br>
               合格した学校</div>
-            <div class="col-5 mx-auto text-center my-4" 
-            style="display:block; height:34vh; width:39vw; background-color:#FFE3F9; border-radius:5vw; box-shadow:0 1px 5px 1px #bbb">
-              <img src="../images/teacher1.jpeg" class="mt-3 mb-2" style="height:35vw; width:35vw; border-radius:50%">
+            <div class="sucimg col-5 mx-auto text-center my-4">
+              <img src="../images/teacher1.jpeg">
               名前</br>
               出身校</br>
               合格した学校</div>
-            <div class="col-5 mx-auto text-center my-4" 
-            style="display:block; height:34vh; width:39vw; background-color:#FFE3F9; border-radius:5vw; box-shadow:0 1px 5px 1px #bbb">
-              <img src="../images/teacher1.jpeg" class="mt-3 mb-2" style="height:35vw; width:35vw; border-radius:50%">
+            <div class="sucimg col-5 mx-auto text-center my-4">
+              <img src="../images/teacher1.jpeg">
               名前</br>
               出身校</br>
               合格した学校</div>
-            <div class="col-5 mx-auto text-center my-4" 
-            style="display:block; height:34vh; width:39vw; background-color:#FFE3F9; border-radius:5vw; box-shadow:0 1px 5px 1px #bbb">
-              <img src="../images/teacher1.jpeg" class="mt-3 mb-2" style="height:35vw; width:35vw; border-radius:50%">
+            <div class="sucimg col-5 mx-auto text-center my-4">
+              <img src="../images/teacher1.jpeg">
               名前</br>
               出身校</br>
               合格した学校</div>
-            <div class="col-5 mx-auto text-center my-4" 
-            style="display:block; height:34vh; width:39vw; background-color:#FFE3F9; border-radius:5vw; box-shadow:0 1px 5px 1px #bbb">
-              <img src="../images/teacher1.jpeg" class="mt-3 mb-2" style="height:35vw; width:35vw; border-radius:50%">
+            <div class="sucimg col-5 mx-auto text-center my-4">
+              <img src="../images/teacher1.jpeg">
               名前</br>
               出身校</br>
               合格した学校</div>
@@ -128,49 +118,45 @@
       
       <div class="container-fluid d-flex flex-column"> <!--合格実績スタート-->
         <div class="text-center">
-          <div class="mt-5 font-weight-bold" 
-              style="display:inline-block; font-size:5vw; border-bottom:3px solid #FFE3F9">合格実績</div>
+          <div class="themep mt-5 font-weight-bold">合格実績</div>
         </div>
         
-        <div class="mt-4 font-weight-bold pl-2" 
-            style="display:inline-block; border-left:5px solid #FFE3F9">年度別</div>
+        <div class="themecp mt-4 font-weight-bold pl-2">年度別</div>
         <div class="mt-4 mx-auto">
           <ul class="list-inline">
-            <li class="list-inline-item mx-4">2020年度</li>
-            <li class="list-inline-item mx-4">2019年度</li>
-            <li class="list-inline-item mx-4">2018年度</li>
+            <li class="list-inline-item mx-3">2020年度</li>
+            <li class="list-inline-item mx-3">2019年度</li>
+            <li class="list-inline-item mx-3">2018年度</li>
           </ul>
           <ul class="list-inline mt-5">
-            <li class="list-inline-item mx-4">2017年度</li>
-            <li class="list-inline-item mx-4">2016年度</li>
-            <li class="list-inline-item mx-4">2015年度</li>
+            <li class="list-inline-item mx-3">2017年度</li>
+            <li class="list-inline-item mx-3">2016年度</li>
+            <li class="list-inline-item mx-3">2015年度</li>
           </ul>
         </div>
         
             
-        <div class="mt-5 font-weight-bold pl-2" 
-            style="display:inline-block; border-left:5px solid #FFE3F9">地域別</div>
+        <div class="themecp mt-5 font-weight-bold pl-2">地域別</div>
         <div class="mt-4 mx-auto">
           <ul class="list-inline">
-            <li class="list-inline-item mx-4">北海道・東北地方</li>
-            <li class="list-inline-item mx-4">関東地方</li>
+            <li class="list-inline-item mx-3">北海道・東北地方</li>
+            <li class="list-inline-item mx-3">関東地方</li>
           </ul>
           <ul class="list-inline mt-5">
-            <li class="list-inline-item mx-4">中部地方</li>
-            <li class="list-inline-item mx-4">近畿地方</li>
-            <li class="list-inline-item mx-4">中国地方</li>
+            <li class="list-inline-item mx-3">中部地方</li>
+            <li class="list-inline-item mx-3">近畿地方</li>
+            <li class="list-inline-item mx-3">中国地方</li>
           </ul>
           <ul class="list-inline mt-5">
-            <li class="list-inline-item mx-4">四国地方</li>
-            <li class="list-inline-item mx-4">九州・沖縄地方</li>
+            <li class="list-inline-item mx-3">四国地方</li>
+            <li class="list-inline-item mx-3">九州・沖縄地方</li>
           </ul>
         </div>
             
       </div> <!--合格実績ここまで-->
       
-      <div class="d-inline-flex justify-content-center"
-            style="width:100%; height:8vh; margin-top:40vh; background-color:#EEFFDB"> <!--フッター-->
-        <div class="align-self-center" style="font-size:3.6vw">ここに著作権のことを書きます。</div>
+      <div class="footer d-inline-flex justify-content-center"> <!--フッター-->
+        <div class="align-self-center">ここに著作権のことを書きます。</div>
       </div>
     
     <!-- Optional JavaScript -->
