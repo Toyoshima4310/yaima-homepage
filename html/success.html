@@ -158,6 +158,34 @@
       <div class="footer d-inline-flex justify-content-center"> <!--フッター-->
         <div class="align-self-center">ここに著作権のことを書きます。</div>
       </div>
+
+      <div id="#sucexp">
+        <button v-on:click="openModal">click</button>
+        <div v-show="showContent">
+          <div id="overlay"></div>
+          <div class="expimg">
+            <img src="../images/successimg.jpeg" class="img-fluid">
+            <div class="clsbtn btn btn-block font-weight-bold" v-on:click="closeModal">閉じる</div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        new Vue({
+          el:"#sucexp",
+          data:{
+            showContent: false
+          },
+          methods:{
+            openModal: function(){
+              this.showContent = true
+            },
+            closeModal: function(){
+              this.showContent = false
+            }
+          }
+        })
+      </script>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
