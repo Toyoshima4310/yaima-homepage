@@ -23,7 +23,7 @@
     </div> <!--ヘッダー-->
 
       <!--スマホメニュースタート-->
-      <div id="menu">
+      <div id="menu" class="d-lg-none">
 
         <div v-on:click="drawer" class="menubtn d-flex flex-column justify-content-center align-items-center">
           <div class="line"></div>
@@ -63,44 +63,70 @@
         })
       </script>
       <!--スマホメニューここまで-->
+
+      <!--ヘッダーメニュースタート-->
+      <div class="headmenu d-none d-md-block font-weight-bold">
+        <ul class="list-inline d-flex justify-content-around text-center">
+          <li class="list-inline-item"><a href="index.html">ホーム</a></li>
+          <li class="list-inline-item"><a href="#" style="color:white;
+            background-color:#59DD82;">やいま塾について</a></li>
+          <li class="list-inline-item"><a href="success.html">合格体験記・合格実績</a></li>
+          <li class="list-inline-item"><a href="course.html">コース・料金</a></li>
+          <li class="list-inline-item"><a href="session.html">進学への道</a></li>
+          <li class="list-inline-item"><a href="interview.html">卒業生インタビュー</a></li>
+          <li class="list-inline-item"><a href="access.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <!--ヘッダーメニューここまで-->
       
-      <div class="headerg d-inline-flex justify-content-center"> <!--ヘッダー帯-->
+      <div class="headerg d-inline-flex justify-content-center d-lg-none"> <!--ヘッダー帯-->
         <div class="align-self-center font-weight-bold">やいま塾について</div>
       </div>
+
+      <div class="pcwidth">
+        <div class="container-fluid text-center text-lg-left mb-4"> <!--やいま塾で大切にしていることスタート-->
+          <div class="themeg mt-5 font-weight-bold">やいま塾で大切にしていること</div>
+                <ul class="mt-4 list-unstyled">
+                  <li class="mt-3 ml-lg-4">・やいま塾で大切にしていることを書きます。</li>
+                  <li class="mt-4 ml-lg-4">・やいま塾で大切にしていることを書きます。</li>
+                  <li class="mt-4 ml-lg-4">・やいま塾で大切にしていることを書きます。</li>
+                </ul>
+          </div> <!--やいま塾で〜ここまで-->
+          
+          <div class="container-fluid text-center text-lg-left"> <!--講師紹介スタート-->
+            <div class="themeg mt-5 font-weight-bold">講師紹介</div>
+            <div class="row">
+              <div class="teacher mt-5 mx-auto col-lg-3" ><img src="../images/teacher2.jpeg" class="img-fluid rounded"></div>
+              <div class="m-4 col-lg-8 mt-lg-5">講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。</div>
+            </div>
+          
+            <div class="row">
+              <div class="teacher mt-5 mx-auto col-lg-3" ><img src="../images/teacher2.jpeg" class="img-fluid rounded"></div>
+              <div class="m-4 col-lg-8 mt-lg-5">講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。</div>
+            </div>
+
+              <div class="row">
+              <div class="teacher mt-5 mx-auto col-lg-3" ><img src="../images/teacher2.jpeg" class="img-fluid rounded"></div>
+              <div class="m-4 col-lg-8 mt-lg-5">講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。
+                                  講師の名前などの自己紹介を書いていきます。</div>
+            </div>
+          </div> <!--講師紹介ここまで-->
+      </div>
       
-      <div class="container-fluid text-center mb-4"> <!--やいま塾で大切にしていることスタート-->
-      <div class="themeg mt-5 font-weight-bold">やいま塾で大切にしていること</div>
-            <ul class="mt-4 list-unstyled">
-              <li class="mt-3">・やいま塾で大切にしていることを書きます。</li>
-              <li class="mt-4">・やいま塾で大切にしていることを書きます。</li>
-              <li class="mt-4">・やいま塾で大切にしていることを書きます。</li>
-            </ul>
-      </div> <!--やいま塾で〜ここまで-->
-      
-      <div class="container-fluid text-center"> <!--講師紹介スタート-->
-        <div class="themeg mt-5 font-weight-bold">講師紹介</div>
-        <div class="mt-5 mx-auto" style="width:45vw"><img src="../images/teacher2.jpeg" class="img-fluid rounded"></div>
-        <div class="m-4">講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。</div>
-        <div class="mt-5 mx-auto" style="width:45vw"><img src="../images/teacher2.jpeg" class="img-fluid rounded"></div>
-        <div class="m-4">講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。</div>
-        <div class="mt-5 mx-auto" style="width:45vw"><img src="../images/teacher2.jpeg" class="img-fluid rounded"></div>
-        <div class="m-4">講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。
-                              講師の名前などの自己紹介を書いていきます。</div>
-      </div> <!--講師紹介ここまで-->
       
       <div class="footer d-inline-flex justify-content-center"> <!--フッター-->
         <div class="align-self-center">ここに著作権のことを書きます。</div>

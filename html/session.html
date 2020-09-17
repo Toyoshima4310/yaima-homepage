@@ -24,7 +24,7 @@
       </div> <!--ヘッダー-->
 
       <!--スマホメニュースタート-->
-      <div id="menu">
+      <div id="menu" class="d-lg-none">
 
         <div v-on:click="drawer" class="menubtn d-flex flex-column justify-content-center align-items-center">
           <div class="line"></div>
@@ -64,55 +64,90 @@
         })
       </script>
       <!--スマホメニューここまで-->
+
+      <!--ヘッダーメニュースタート-->
+      <div class="headmenu d-none d-md-block font-weight-bold">
+        <ul class="list-inline d-flex justify-content-around text-center">
+          <li class="list-inline-item"><a href="index.html">ホーム</a></li>
+          <li class="list-inline-item"><a href="about.html">やいま塾について</a></li>
+          <li class="list-inline-item"><a href="success.html">合格体験記・合格実績</a></li>
+          <li class="list-inline-item"><a href="course.html">コース・料金</a></li>
+          <li class="list-inline-item"><a href="#" style="color:white;
+            background-color:#59DD82;">進学への道</a></li>
+          <li class="list-inline-item"><a href="interview.html">卒業生インタビュー</a></li>
+          <li class="list-inline-item"><a href="access.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <!--ヘッダーメニューここまで-->
       
-      <div class="headerg d-inline-flex justify-content-center"> <!--ヘッダー帯-->
+      <div class="headerg d-inline-flex justify-content-center d-lg-none"> <!--ヘッダー帯-->
         <div class="align-self-center font-weight-bold">進学への道</div>
       </div>
       
-      <div class="container-fluid text-center"> <!--進学への道スタート-->
-        <div class="mt-5 mb-3">
-          毎年３月に、進学への道を開催しています。というような説明を書いていきます。
-          毎年３月に、進学への道を開催しています。というような説明を書いていきます。
-          毎年３月に、進学への道を開催しています。というような説明を書いていきます。
-          毎年３月に、進学への道を開催しています。というような説明を書いていきます。
-          毎年３月に、進学への道を開催しています。というような説明を書いていきます。
-          毎年３月に、進学への道を開催しています。というような説明を書いていきます。
+      <div class="pcwidth">
+        <div class="container-fluid text-center"> <!--進学への道スタート-->
+          <div class="mt-5 mb-3">
+            毎年３月に、進学への道を開催しています。というような説明を書いていきます。
+            毎年３月に、進学への道を開催しています。というような説明を書いていきます。
+            毎年３月に、進学への道を開催しています。というような説明を書いていきます。
+            毎年３月に、進学への道を開催しています。というような説明を書いていきます。
+            毎年３月に、進学への道を開催しています。というような説明を書いていきます。
+            毎年３月に、進学への道を開催しています。というような説明を書いていきます。
+          </div>
+          <div class="row">
+            <div class="col-lg-5 mx-lg-auto">
+              <div class="ssnimg mt-4 mb-2 mx-auto">
+                <img src="../images/session4.jpeg" class="img-fluid">
+              </div>
+              <a href="#" class="mb-3">第４回「進学への道」デジタルパンフレット(PDF)</a>
+            </div>
+            <div class="col-lg-5 mx-lg-auto">
+              <div class="ssnimg mt-4 mb-2 mx-auto">
+                <img src="../images/session3.jpeg" class="img-fluid">
+              </div>
+              <a href="#" class="mb-3">第３回「進学への道」デジタルパンフレット(PDF)</a>
+            </div>
+            <div class="col-lg-5 mx-lg-auto">
+              <div class="ssnimg mt-4 mt-lg-5 mb-2 mx-auto">
+                <img src="../images/session2.jpeg" class="img-fluid">
+              </div>
+              <a href="#" class="mb-3">第２回「進学への道」デジタルパンフレット(PDF)</a>
+            </div>
+            <div class="col-lg-5 mx-lg-auto">
+              <div class="ssnimg mt-4 mt-lg-5 mb-2 mx-auto">
+              <img src="../images/session1.jpeg" class="img-fluid">
+            </div>
+            <a href="#" class="mb-4">第１回「進学への道」デジタルパンフレット(PDF)</a>
+            </div>
+          </div>
+          
+  
+          <div class="themeg mt-5 font-weight-bold">協賛学校・企業様</div>
+            <ul class="mt-4 list-unstyled">
+              <div class="row">
+                <div class="col-lg-5 mx-lg-auto">
+                  <li class="mt-3">・協賛学校、企業様の名称を書きます。</li>
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                </div>
+                <div class="col-lg-5 mx-lg-auto">
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                  <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
+                </div>
+              </div>
+            </ul> 
         </div>
-        <div class="ssnimg mt-4 mb-2 mx-auto">
-          <img src="../images/session4.jpeg" class="img-fluid">
-        </div>
-        <a href="#" class="mb-3">第４回「進学への道」デジタルパンフレット(PDF)</a>
-        <div class="ssnimg mt-4 mb-2 mx-auto">
-          <img src="../images/session3.jpeg" class="img-fluid">
-        </div>
-        <a href="#" class="mb-3">第３回「進学への道」デジタルパンフレット(PDF)</a>
-        <div class="ssnimg mt-4 mb-2 mx-auto">
-          <img src="../images/session2.jpeg" class="img-fluid">
-        </div>
-        <a href="#" class="mb-3">第２回「進学への道」デジタルパンフレット(PDF)</a>
-        <div class="ssnimg mt-4 mb-2 mx-auto">
-          <img src="../images/session1.jpeg" class="img-fluid">
-        </div>
-        <a href="#" class="mb-4">第１回「進学への道」デジタルパンフレット(PDF)</a>
-
-        <div class="themeg mt-5 font-weight-bold">協賛学校・企業様</div>
-          <ul class="mt-4 list-unstyled">
-            <li class="mt-3">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-            <li class="mt-4">・協賛学校、企業様の名称を書きます。</li>
-          </ul> 
       </div>
+      
       
       <div class="footer d-inline-flex justify-content-center"> <!--フッター-->
         <div class="align-self-center">ここに著作権のことを書きます。</div>

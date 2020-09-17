@@ -167,7 +167,7 @@
         box-shadow:0 1px 5px 1px #bbb;
     }
 
-    .saitoh img {
+    .teacher img {
         width:45vw;
     }
 
@@ -311,6 +311,15 @@
         top:-36px;
     }
 
+    .pcwidth {
+        width:992px;
+        margin-left:auto;
+        margin-right:auto;
+        position:relative;
+        top:-10px;
+    }
+
+
     .header ul li {
         font-size:1.56vw;
     }
@@ -427,8 +436,8 @@
         box-shadow:0 1px 5px 1px #bbb;
     }
 
-    .saitoh img{
-        width:20vw;
+    .teacher img{
+        width:15vw;
     }
 
     .news iframe {
@@ -456,5 +465,57 @@
         color:#2FBA4E;
     }
 
+    /*------------------success.htmlスタート-----------------*/
 
+    .sucimg {
+        display:block;
+        height:19.5vw;
+        width:14vw;
+        background-color:#FFE3F9;
+        border-radius:2vw;
+        box-shadow:0 1px 5px 1px #bbb;
+        padding:1.7vw 1vw;
+    }
+
+    .sucimg img {
+        height:10.7vw;
+        width:10.7vw;
+        margin-bottom:1vw;
+        border-radius:50%;
+    }
+
+
+    .themecp {
+        display:inline-block;
+        border-left:5px solid #FFE3F9;
+    }
+
+    /*-------------------course.htmlスタート-----------------*/
+
+    .table tr:nth-child(odd){
+        background-color:#F6FFEB;
+    }
+
+    /*-----------------interviw.htmlスタート----------------*/
+
+    .intimg {
+        font-size:1.15vw;
+        display:block;
+        height:19.5vw;
+        width:14vw;
+        background-color:#EEFFDB;
+        border-radius:2vw;
+        box-shadow:0 1px 5px 1px #bbb;
+        padding:1vw;
+    }
+
+    .intimg img {
+        height:10.7vw;
+        width:10.7vw;
+        margin-bottom:0.5vw;
+        border-radius:50%;
+    }
+
+
+    
 } /*---------------------pc版ここまで-----------------------*/
