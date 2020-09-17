@@ -221,6 +221,26 @@
         border-left:5px solid #FFE3F9;
     }
 
+    .suclist ul {
+        width:80vw;
+    }
+
+    .suclist ul li {
+        height:13.8vw;
+        background-color:#FFE3F9;
+        padding:4vw 0 0 0;
+        border:1px solid white;
+        margin:0;
+        position:relative;
+        border-radius:5vw;
+    }
+
+    .suclist ul li span {
+        position:absolute;
+        top:4vw;
+        right:4vw;
+    }
+
     #sucexp {
         display:none;
     }
@@ -242,6 +262,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        display:none;
     }
 
     .expimg {
@@ -249,6 +270,7 @@
         position:absolute;
         top:12vw;
         z-index:2;
+        display:none;
     }
 
     .clsbtn {
@@ -264,6 +286,7 @@
         border-radius:5vw;
         box-shadow:0 1px 5px 1px #bbb;
         z-index:2;
+        display:none;
     }
     /*-----------------interviw.htmlスタート----------------*/
 
@@ -488,6 +511,23 @@
     .themecp {
         display:inline-block;
         border-left:5px solid #FFE3F9;
+    }
+
+    .suclist ul li {
+        height:4vw;
+        width:20vw;
+        background-color:#FFE3F9;
+        padding:1vw 0 0 0;
+        border:1px solid white;
+        margin:0;
+        position:relative;
+        border-radius:5vw;
+    }
+
+    .suclist ul li span {
+        position:absolute;
+        top:1vw;
+        right:1vw;
     }
 
     /*-------------------course.htmlスタート-----------------*/
