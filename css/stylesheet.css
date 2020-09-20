@@ -186,6 +186,8 @@
 
     /*-------------------course.htmlスタート-----------------*/
 
+    
+
     .coursetable tr:nth-child(odd){
         background-color:#F6FFEB;
     }
@@ -582,6 +584,11 @@
     }
 
     /*-------------------course.htmlスタート-----------------*/
+
+    .left {
+        display:inline-block;
+        margin-left:3vw;
+    }
 
     .coursetable tr:nth-child(odd){
         background-color:#F6FFEB;
