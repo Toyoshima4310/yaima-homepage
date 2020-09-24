@@ -172,6 +172,11 @@
         box-shadow:0 1px 5px 1px #bbb;
     }
 
+    .idxsuc a:hover{
+        background-color:#FA9CE4;
+        color:white;
+    }
+
     .cherryimg {
         height:80vw;
     }
@@ -221,6 +226,9 @@
         border-radius:50%;
     }
 
+    .sucimg:hover {
+        opacity:0.8;
+    }
 
     .themecp {
         display:inline-block;
@@ -239,6 +247,10 @@
         margin:0;
         position:relative;
         border-radius:5vw;
+    }
+
+    .suclist ul li:hover {
+        opacity:0.5;
     }
 
     .suclist ul li span {
@@ -286,6 +298,10 @@
         box-shadow:0 1px 5px 1px #bbb;
         padding-top:2.5vw;
         padding-bottom:2.5vw;
+    }
+
+    .intimg:hover {
+        opacity:0.8;
     }
 
     .intimg img {
@@ -353,6 +369,14 @@
 
     .ssnimg {
         width:68vw;
+    }
+
+    .ssnfirstimg {
+        width:68vw;
+    }
+
+    .ssnimg:hover {
+        opacity:0.8;
     }
 
 } /*--------------------------スマホ版ここまで-------------------------------*/
