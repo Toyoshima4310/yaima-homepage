@@ -313,14 +313,14 @@
         background-color:#EEFFDB;
         border-radius:50%;
         text-align:center;
-        padding-top:2.3vw;
+        padding-top:2vw;
     }
 
     .questiontext {
         display:inline-block;
         width:85%;
         margin-left:3%;
-        padding-top:2.3vw;
+        padding-top:2vw;
     }
 
     .aicon {
@@ -330,14 +330,14 @@
         background-color:#FFE3F9;
         border-radius:50%;
         text-align:center;
-        padding-top:2.3vw;
+        padding-top:2vw;
     }
 
     .answertext {
         display:inline-block;
         width:85%;
         margin-left:3vw;
-        padding-top:2.3vw;
+        padding-top:2vw;
     }
 
 
@@ -494,6 +494,11 @@
         box-shadow:0 1px 5px 1px #bbb;
     }
 
+    .idxsuc a:hover{
+        background-color:#FA9CE4;
+        color:white;
+    }
+
     .teacher img{
         width:15vw;
     }
@@ -533,6 +538,11 @@
         border-radius:2vw;
         box-shadow:0 1px 5px 1px #bbb;
         padding:1vw;
+        cursor: pointer;
+    }
+
+    .sucimg:hover {
+        opacity:0.8;
     }
 
     .sucimg img {
@@ -557,6 +567,11 @@
         margin:0;
         position:relative;
         border-radius:5vw;
+        cursor: pointer;
+    }
+
+    .suclist ul li:hover {
+        opacity:0.5;
     }
 
     .suclist ul li span {
@@ -609,6 +624,11 @@
         border-radius:2vw;
         box-shadow:0 1px 5px 1px #bbb;
         padding:1vw;
+        cursor: pointer;
+    }
+
+    .intimg:hover {
+        opacity:0.8;
     }
 
     .intimg img {
@@ -666,6 +686,12 @@
         width:85%;
         margin-left:3vw;
         padding-top:0.6vw;
+    }
+
+    /*-----------------session.htmlスタート----------------*/
+
+    .ssnimg:hover {
+        opacity:0.8;
     }
     
 } /*---------------------pc版ここまで-----------------------*/
