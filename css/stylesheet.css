@@ -156,6 +156,11 @@
         box-shadow:0 1px 5px 1px #bbb;
     }
 
+    .sea a:hover{
+        background-color:#59DD82;
+        color:white;
+    }
+
     .idxsuc a {
         width:56.5vw;
         height:16.4vw;
