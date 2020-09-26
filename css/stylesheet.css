@@ -120,8 +120,14 @@
 
     .humberger ul li:not(:first-child) a {
         color:#47B268;
+        padding:3vw 0;
         font-size:4.8vw;
         font-weight:bold;
+    }
+
+    .humberger ul li:not(:first-child) a:hover {
+        background-color:#59DD82;
+        color:white;
     }
 
     /*--------------------------index.htmlスタート-------------------------*/
