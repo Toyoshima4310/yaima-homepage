@@ -13,8 +13,9 @@
         font-size:3vw;
     }
 
-    .headerlogo {
-        font-size:6vw;
+    .headerlogo img {
+        width:47vw;
+        height:6vw;
     }
 
     .themeg {
@@ -339,8 +340,6 @@
         height:9.7vw;
         background-color:#EEFFDB;
         border-radius:50%;
-        text-align:center;
-        padding-top:2vw;
     }
 
     .questiontext {
@@ -356,8 +355,6 @@
         height:9.7vw;
         background-color:#FFE3F9;
         border-radius:50%;
-        text-align:center;
-        padding-top:2vw;
     }
 
     .answertext {
@@ -417,8 +414,9 @@
         font-size:1.56vw;
     }
     
-    .headerlogo {
-        font-size:2.73vw;
+    .headerlogo img {
+        width:25vw;
+        height:3vw;
     }
     
     .themeg {
@@ -695,8 +693,6 @@
         height:3.2vw;
         background-color:#EEFFDB;
         border-radius:50%;
-        text-align:center;
-        padding-top:0.6vw;
     }
 
     .questiontext {
@@ -712,8 +708,6 @@
         height:3.2vw;
         background-color:#FFE3F9;
         border-radius:50%;
-        text-align:center;
-        padding-top:0.6vw;
     }
 
     .answertext {
