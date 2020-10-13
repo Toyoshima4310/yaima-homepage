@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/stylesheet.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <title>コース・料金</title>
+    <title>コース紹介</title>
   </head>
   <body>
     <div class="container-fluid"> <!--ヘッダー-->
@@ -36,11 +36,9 @@
           <ul class="flex-column text-center list-unstyled" v-bind:style="{transform:draw}">
             <li><a href="#" v-on:click="closer" ontouchstart="">×</a></li>
             <li><a href="index.html" ontouchstart="">ホーム</a></li>
-            <li><a href="about.html" ontouchstart="">やいま塾について</a></li>
             <li><a href="success.html" ontouchstart="">合格体験記・合格実績</a></li>
-            <li><a v-on:click="closer" ontouchstart=""> コース・料金</a></li>
+            <li><a v-on:click="closer" ontouchstart=""> コース紹介</a></li>
             <li><a href="session.html" ontouchstart="">進学への道</a></li>
-            <li><a href="interview.html" ontouchstart="">卒塾生インタビュー</a></li>
             <li><a href="access.html" ontouchstart="">お問い合わせ</a></li>
           </ul>
         </div>
@@ -66,35 +64,33 @@
 
       <!--ヘッダーメニュースタート-->
       <div class="headmenu d-none d-md-block font-weight-bold">
-        <ul class="list-inline d-flex justify-content-around text-center">
+        <ul class="list-inline d-flex justify-content-center text-center">
           <li class="list-inline-item"><a href="index.html">ホーム</a></li>
-          <li class="list-inline-item"><a href="about.html">やいま塾について</a></li>
           <li class="list-inline-item"><a href="success.html">合格体験記・合格実績</a></li>
           <li class="list-inline-item"><a href="#" style="color:white;
-            background-color:#59DD82;">コース・料金</a></li>
+            background-color:#59DD82;">コース紹介</a></li>
           <li class="list-inline-item"><a href="session.html">進学への道</a></li>
-          <li class="list-inline-item"><a href="interview.html">卒塾生インタビュー</a></li>
           <li class="list-inline-item"><a href="access.html">お問い合わせ</a></li>
         </ul>
       </div>
       <!--ヘッダーメニューここまで-->
       
       <div class="headerg d-inline-flex justify-content-center d-md-none"> <!--ヘッダー帯-->
-        <div class="align-self-center font-weight-bold">コース・料金</div>
+        <div class="align-self-center font-weight-bold">コース紹介</div>
       </div>
       
       <div class="pcwidth">
         <div class="container-fluid text-center"> <!--コース・料金スタート-->
           <div class="row">
             <div class="col-md-6">
-              <div class="themeg mt-5 mb-3 font-weight-bold">小学生コース</div>
+              <div class="themeg mt-5 mb-3 font-weight-bold">Kids英語コース</div>
               <table class="coursetable table text-center table-bordered mt-3">
                 <tr><th>対象学年</th></tr>
                 <tr><td>小学１年生〜小学６年生</td></tr>
                 <tr><th>対象科目</th></tr>
-                <tr><td>国語　算数　理科　社会　英語</td></tr>
+                <tr><td>ゲーム英会話</td></tr>
                 <tr><th>時間・回数</th></tr>
-                <tr><td>100分 × 週２回 または 週３回</td></tr>
+                <tr><td>60分 × 週１回</td></tr>
                 <tr><th>その他</th></tr>
                 <tr><td>検定試験・中学受験等ご相談ください。</td></tr>
               </table>
@@ -107,9 +103,14 @@
                 <tr><th>対象科目</th></tr>
                 <tr><td>英語　国語　数学　理科　社会</td></tr>
                 <tr><th>時間・回数</th></tr>
-                <tr><td>155分 × 週２回 または 週３回</td></tr>
+                <tr><td>90分 × 週２回 または 週３回</td></tr>
                 <tr><th>その他</th></tr>
-                <tr><td>検定試験・私立・県外受験等ご相談ください。</td></tr>
+                <tr><td class="text-left">
+                  <div class="left">
+                    入塾時に面談にて、</br>
+                    学習目標を設定してからの受講となります。</br>
+                    検定試験・私立・県外受験等ご相談ください。</td></tr>
+                  </div>
               </table>
             </div>
             <div class="col-md-6">
@@ -123,16 +124,16 @@
                   小論文・面接(プレゼンテーション、</br>
                   グループディスカッション等)</td></tr>
                  <tr><th>時間・回数</th></tr>
-                 <tr><td>150分 × 週２回 または 週３回</td></tr>
+                 <tr><td>120分 × 週２回 または 週３回</td></tr>
                  <tr><th>その他</th></tr>
                  <tr><td class="text-left">
                   <div class="left">
                     入塾時に面談にて、</br>
                     学習目標を設定してからの受講となります。</br>
                     ・学校授業の予復習中心</br>
-                    ・センター試験対策</br>
-                    ・A O入試対策</br>
-                    ・推薦入試対策　など
+                    ・大学入学共通テスト対策</br>
+                    ・総合型選抜対策</br>
+                    ・学校推薦型選抜　など
                   </div></td></tr>
                </table>
             </div>
@@ -145,15 +146,11 @@
                 <tr><td class="text-left">
                         <div class="left">
                           ・公務員対策講座</br>
-                          ・中国語講座</br>
-                          ・簿記講座</br>
-                          ・ファイナンシャルプランナー資格取得講座</br>
-                          ・保育士資格取得講座</br>
                           ・工業系資格取得講座・技術系資格取得講座</br>
                           ・大学・専門学校受験講座
                         </div></td></tr>
                 <tr><th>時間・回数</th></tr>
-                <tr><td>90分 × 週２回(目安)</td></tr>
+                <tr><td>120分 × 週２回(目安)</td></tr>
                 <tr><th>その他</th></tr>
                 <tr><td>
                     事前面談にて、時間帯・回数・進度等の</br>

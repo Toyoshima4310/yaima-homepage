@@ -532,8 +532,15 @@
         color:white;
     }
 
-    .teacher img{
-        width:15vw;
+    .teacher img {
+        width:20vw;
+    }
+
+    .teacherText {
+        width:50vw;
+        position: relative;
+        top:3vw;
+        left:3vw;
     }
 
     .news iframe {
