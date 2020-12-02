@@ -2,6 +2,10 @@
       <div class="headerg d-inline-flex justify-content-center d-md-none"> <!--ヘッダー帯-->
         <div class="align-self-center font-weight-bold">コース紹介</div>
       </div>
+
+      <div class="text-center mt-5">
+        回数や指導内容に関しては、<br>事前面談時にご相談ください。
+      </div>
       
       <div class="pcwidth">
         <div class="container-fluid text-center"> <!--コース・料金スタート-->
@@ -27,7 +31,7 @@
                 <tr><th>対象科目</th></tr>
                 <tr><td>英語　国語　数学　理科　社会</td></tr>
                 <tr><th>時間・回数</th></tr>
-                <tr><td>90分 × 週２回 または 週３回</td></tr>
+                <tr><td>90分 × 週３回</td></tr>
                 <tr><th>その他</th></tr>
                 <tr><td class="text-left">
                   <div class="left">
@@ -48,7 +52,7 @@
                   小論文・面接(プレゼンテーション、</br>
                   グループディスカッション等)</td></tr>
                  <tr><th>時間・回数</th></tr>
-                 <tr><td>120分 × 週２回 または 週３回</td></tr>
+                 <tr><td>120分 × 週２回</td></tr>
                  <tr><th>その他</th></tr>
                  <tr><td class="text-left">
                   <div class="left">

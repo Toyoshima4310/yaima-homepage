@@ -3,6 +3,10 @@
 /*---------------------スマホ版スタート--------------------*/
 @media (max-width:767px) {
 
+    .wrap {
+        overflow: hidden;
+    }
+
     body {
         color: #505050;
         font-size:3.7vw;
@@ -52,7 +56,8 @@
 
     .footer {
         width:100%;
-        height:12vw;
+        height:25vw;
+        padding-bottom:15vw;
         margin-top:40vh;
         background-color:#EEFFDB;
         font-size:3.6vw;
@@ -63,16 +68,16 @@
         width:15.7vw;
         height:15.7vw;
         border-radius:50%;
-        background-color:#47B268;
+        background-color:#2FBA4E;
         position:fixed;
-        top:19.3vw;
+        bottom:20vw;
         left:76.8vw;
         z-index:1;
         box-shadow:0 1px 5px 1px #bbb;
     }
 
     .line {
-        height:0.5vw;
+        height:2px;
         width:9.4vw;
         background-color:white;
         border-radius:1vw;
@@ -85,15 +90,21 @@
         margin-top:1vw;
     }
 
-    .humberger ul {
+    .humberger {
         position:fixed;
         top:0;
         right:-80vw;
         background-color:#C4F7C4;
-        width:80vw;
         height:100vh;
-        z-index:2;
+        width:80vw;
+        z-index:3;
         transition:0.4s linear;
+    }
+
+    .humberger ul {
+        position:fixed;
+        bottom:40vw;
+        width:80vw;
     }
 
     .humberger ul li {
@@ -102,41 +113,82 @@
         margin:0;
     }
 
-    .humberger ul li:first-child {
-        margin-top:10vw;
-        margin-left:50vw;
-        padding-bottom:25vw;
-        font-size:17vw;
-    }
-
     .humberger ul li a {
         display:block;
         text-decoration:none;
     }
 
-    .humberger ul li:first-child a {
-        color:#47B268;
-        transition:0.4s linear;
+    .humberger ul li:first-child img {
+        height:8vw;
     }
 
-    .humberger ul li:not(:first-child) a {
+    .humberger ul li:not(:last-child) a {
         color:#47B268;
         padding:3vw 0;
         font-size:4.8vw;
         font-weight:bold;
     }
 
-    .humberger ul li:not(:first-child) a:hover {
+    .humberger ul li:not(:last-child) a:hover {
         background-color:#59DD82;
         color:white;
     }
+
+    .humberger ul li:last-child {
+        font-size:17vw;
+        color:#47B268;
+        transition:0.4s linear;
+        margin-left:49vw;
+    }
+
+    .callbtn {
+        position:fixed;
+        bottom:3vw;
+        left:25vw;
+        z-index:2;
+        width:50vw;
+        background-color: #FFDD91;
+        border-radius:3vw;
+        box-shadow:0 1px 5px 1px #bbb;
+    }
+
+    .callbtn a {
+        padding:3vw 3vw;
+        font-size:4vw;
+    }
+
+    .callbtn img {
+        width:6vw;
+        position:relative;
+        bottom:0.3vw;
+        right:0.5vw;
+    }
+
+    /* .backbtn {
+        width:15.7vw;
+        height:15.7vw;
+        border-radius:50%;
+        background-color:#2FBA4E;
+        position:fixed;
+        bottom:15vw;
+        left:76.8vw;
+        z-index:1;
+        box-shadow:0 1px 5px 1px #bbb;
+    }
+
+    .backbtn img {
+        width:7vw;
+        position: relative;
+        top:1.8vw;
+    } */
+
 
     /*--------------------------index.htmlスタート-------------------------*/
 
     .sea {
         height:62.3vw;
         background-image:url(../images/spsea.jpeg);
-        background-size:cover;
+        background-size: cover;
         position:relative;
         top:-2.2vw;
     }
@@ -168,6 +220,12 @@
         color:white;
     }
 
+    .topsuc {
+        text-decoration:underline;
+        text-decoration-color: yellow;
+        font-size:4.5vw;
+    }
+
     .idxsuc a {
         width:56.5vw;
         height:16.4vw;
@@ -184,8 +242,9 @@
         color:white;
     }
 
-    .cherryimg {
-        height:80vw;
+    .sucexplogo img {
+        width:90vw;
+        height:auto;
     }
 
     .teacher img {
@@ -203,6 +262,11 @@
 
     .newsdate {
         color:#2FBA4E;
+    }
+
+    .idxspon img {
+        width:500px;
+        height:125px;
     }
 
     /*-------------------course.htmlスタート-----------------*/
@@ -229,6 +293,7 @@
     .sucimg img {
         height:35vw;
         width:35vw;
+        object-fit: cover;
         margin-bottom:3vw;
         border-radius:50%;
     }
@@ -270,13 +335,8 @@
         background:rgba(255,227,249,0.8);
     }
 
-    .modal-dialog {
-        position:relative;
-        top:5vh;
-    }
-
     .sucdata-modal-body {
-        height:80vh;
+        height:75vh;
         overflow:scroll;
     }
 
@@ -389,14 +449,15 @@
 
     body {
         color: #505050;
-        font-size:1.3vw;
+        font-size:1.4vw;
         font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;;
     }
 
     .pcwidthind {
-        width:992px;
-        margin-left:auto;
-        margin-right:auto;
+        /* width:992px; */
+        /* margin-left:auto;
+        margin-right:auto; */
+        /* margin-left:3vw; */
         position:relative;
         top:-36px;
     }
@@ -457,6 +518,7 @@
         display:block;
         height:4.3vw;
         padding-top:1.3vw;
+        font-size:1.3vw;
     }
 
     .headmenu ul li a:hover{
@@ -516,7 +578,13 @@
         color:white;
     }
 
-    .idxsuc a {
+    .topsuc {
+        font-size:2vw;
+        text-decoration:underline;
+        text-decoration-color: yellow;
+    }
+
+    .sucexplogo a {
         width:18.3vw;
         height:5.3vw;
         background-color:#FCBBED;
@@ -527,7 +595,11 @@
         box-shadow:0 1px 5px 1px #bbb;
     }
 
-    .idxsuc a:hover{
+    .sucexplogo img {
+        margin-top:30px;
+    }
+
+    .sucexplogo a:hover{
         background-color:#FA9CE4;
         color:white;
     }
@@ -536,12 +608,10 @@
         width:20vw;
     }
 
-    .teacherText {
+    /* .teacherText {
         width:50vw;
-        position: relative;
-        top:3vw;
-        left:3vw;
-    }
+        
+    } */
 
     .news iframe {
         width:50.5vw;
@@ -574,11 +644,12 @@
         display:block;
         height:19.5vw;
         width:14vw;
-        background-color:#FFE3F9;
+        
         border-radius:2vw;
         box-shadow:0 1px 5px 1px #bbb;
         padding:1vw;
         cursor: pointer;
+        font-size:1.3vw;
     }
 
     .sucimg:hover {
@@ -588,6 +659,7 @@
     .sucimg img {
         height:10.7vw;
         width:10.7vw;
+        object-fit: cover;
         margin-bottom:1vw;
         border-radius:50%;
     }
@@ -608,6 +680,7 @@
         position:relative;
         border-radius:5vw;
         cursor: pointer;
+        font-size:1.3vw;
     }
 
     .suclist ul li:hover {
@@ -737,12 +810,12 @@
 
     body {
         color: #505050;
-        font-size:1.3vw;
+        font-size:1.45vw;
         font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;;
     }
 
     .pcwidthind {
-        width:768px;
+        /* width:768px; */
         position:relative;
         top:-36px;
     }
@@ -751,6 +824,15 @@
         width:768px;
         position:relative;
         top:-10px;
+    }
+
+    .frame {
+        background-color:#EEFFDB;
+        width:70%;
+        height:30vh;
+        overflow-y:scroll;
+        margin:auto;
+        padding:2vw;
     }
 
 } /*---------------------タブレット版ここまで-----------------------*/
