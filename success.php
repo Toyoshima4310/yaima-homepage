@@ -42,7 +42,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4>私の合格体験記</h4>
+                      <h4>私の合格体験記 <?php echo $recordsucexp[0]; ?></h4>
                       <button class="close" data-dismiss="modal"><span>&times;</span></button>
                     </div>
                     <div class="modal-body">
