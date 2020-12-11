@@ -46,4 +46,6 @@
         </div>
       </div>
 
+<?php include('snslink.php') ?>
+
 <?php require('footer.php'); ?>

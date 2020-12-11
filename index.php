@@ -96,6 +96,8 @@
           </div> <!--pcwidthind-->
         </div>
 
+        <?php include('snslink.php') ?>
+
         <!-- pcバナー表示 -->
         <div class="col-md-2 d-none d-md-block">
           スポンサー様<br>広告バナー掲載例

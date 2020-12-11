@@ -268,4 +268,6 @@
         <!--合格実績ここまで-->
       </div> <!--pcwidth-->
 
+      <?php include('snslink.php') ?>
+
 <?php require('footer.php'); ?>      
