@@ -92,11 +92,14 @@
               <?php endwhile; ?>
             </div>
           </div> <!--お知らせここまで -->
-    
+            <div class="mx-auto">
+              <?php include('snslink.php') ?>
+            </div>
           </div> <!--pcwidthind-->
         </div>
 
-        <?php include('snslink.php') ?>
+        
+        
 
         <!-- pcバナー表示 -->
         <div class="col-md-2 d-none d-md-block">

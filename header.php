@@ -1,8 +1,14 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta property="og:title" content="錬成教室 やいま塾">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="石垣島にある学習塾、錬成教室やいま塾のホームページです。大学受験、高校受験はもちろん、各種検定の取得もサポートします。">
+    <meta property="og:url" content="https://www.xn--n8j5fqa2502b.com/">
+    <!-- <meta property="og:site_name" content="サイトのタイトル"> -->
+    <meta property="og:image" content="./images/topimg.jpg">
+    <meta charset="utf-8"> 
     <meta name="description" content="石垣島にある学習塾、錬成教室やいま塾のホームページです。大学受験、高校受験はもちろん、各種検定の取得もサポートします。">
     <meta name="keywords" content="石垣島,塾,やいま塾,受験">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

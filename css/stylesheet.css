@@ -549,6 +549,61 @@
         margin-top:8vw;
     }
 
+    .sns {
+        font-size:1.7vw;
+        margin-top:5vw;
+        width:70vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .sns a {
+        color:white;
+        text-decoration: none;
+        display:block;
+        padding:1.5vw;
+    }
+
+    .twitter {
+        background-color: #1DA1F2;
+        border-radius:2vw;
+        width:15vw;
+    }
+    .twitter:hover {
+        opacity:0.8;
+    }
+
+    /* .twitter img {
+        width:6vw;
+    } */
+
+    .facebook {
+        background-color: #1877f2;
+        border-radius:2vw;
+        width:15vw;
+    }
+    .facebook:hover {
+        opacity:0.8;
+    }
+
+    .instagram {
+        background-color:#F26939;
+        border-radius:2vw;
+        width:15vw;
+    }
+    .instagram:hover {
+        opacity:0.8;
+    }
+
+    .snsline {
+        background-color: #00B900;
+        width:15vw;
+        border-radius:2vw;
+    }
+    .snsline:hover {
+        opacity:0.8;
+    }
+
     .headmenu {
         background-color:#EEFFDB;
         position:relative;
